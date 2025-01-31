@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentation Lab Printer PDF Manipulator for Double-Sided Printing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="./Assets/app.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Instrumentation Lab Printer PDF Manipulator for Double-Sided Printing</h1>
+        <hr>
+        <p>The Instrumentation Lab Printer PDF Manipulator automates the process of formatting PDFs for double-sided
+            printing. It eliminates the need for manual page arrangement by automatically reordering pages for correct
+            duplex printing.</p>
+
+
+        <!-- Dropzone area -->
+        <div class="dropzone" id="upload">
+            <span>Drag & drop a PDF file here or click to select</span>
+        </div>
+
+        <!-- Buttons for downloading PDFs -->
+        <button id="downloadOdd" class="hidden download">Download Odd Pages PDF</button>
+        <button id="downloadEven" class="hidden download">Download Even Pages Reversed PDF</button>
+
+        <button id="clear-dropzone" class="hidden">Clear Dropzone</button>
+
+
+    </div>
+    <div class="footer">
+        <!-- Credit added here -->
+        <p>Powered by <a href="https://pdf-lib.js.org/">PDF-lib</a> & <a
+                href="https://www.dropzone.dev/">Dropzone.js</a></p>
+        <p>Assisted by <a href="https://chatgpt.com/">ChatGPT - OpenAI</a></p>
+    </div>
+</body>
+
+</html>
